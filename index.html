@@ -143,7 +143,7 @@
   <!-- #news_area -->
 
   <div id="googlemap_area">
-    <script src="https://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="https://maps.google.com/maps/api/js?key=AIzaSyAErOdTirw6NEvDz7ySx0cXHYHoY3nRPhM"></script>
     <script type="text/javascript">
       function googleMap() {
         var latlng = new google.maps.LatLng(35.6694293, 139.7189323); /* 座標 */
@@ -151,9 +151,11 @@
           zoom: 16,
           /*拡大比率*/
           center: latlng,
+          /*地図を固定の設定ここから*/
           scrollwheel: false,
           disableDoubleClickZoom: true,
           draggable: false,
+          /*地図を固定の設定ここまで*/
           mapTypeControlOptions: { mapTypeIds: ['style', google.maps.MapTypeId.ROADMAP] }
         };
         var map = new google.maps.Map(document.getElementById('map1'), myOptions);
